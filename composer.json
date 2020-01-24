@@ -1,0 +1,13 @@
+{
+  "name": "illuminate-example/questions",
+  "description": "Chulo el proyecto",
+  "type": "project",
+  "autoload": {
+      "psr-4": {
+        "Q\\": "app/"
+      }
+  },
+  "require": {
+    "illuminate/database": "^6.12"
+  }
+}
