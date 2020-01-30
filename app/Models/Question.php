@@ -3,19 +3,19 @@
 
 namespace Q\Models;
 
+use Illuminate\Database\Eloquent\Model as Eloquent;
+use Q\Models\User as User;
 
-use Illuminate\Database\Eloquent\Model;
-use Q\Models\User;
-class Question extends Model
-{
-    protected $table='questions';
-    protected $fillable=['question','user_id'];
+class Question extends Eloquent {
 
+    protected $table = 'questions';
+    protected $fillable = ['question', 'user_id'];
 
+    public function user() {
 
-    public function user(){
-        return $this->belongsTo('User');
+        return $this -> belongsTo('Q\Models\User');
+        //return $this -> belongsTo('Q\Models\User');
+
     }
-
 
 }
