@@ -10,7 +10,7 @@ class Database
 {
 function __construct()
 {
-    $capsule = new Capsule() ;
+    $capsule = new Capsule();
     $capsule->addConnection([   //añadimos la conexion
         'driver'=>DBDRIVER,
         'host'=> DBHOST,
